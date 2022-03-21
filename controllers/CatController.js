@@ -28,8 +28,9 @@ const getWow = (req, res) => {
 }
 
 const getCatDetails = (req, res) => {
+  console.log(req.query)
   res.send({
-    "message": `My cats name is ${req.query.catName}, and they are ${req.query.catAge} years old.`
+    message: `My cats name is ${req.query.catName}, and they are ${req.query.catAge} years old.`
   })
 }
 
